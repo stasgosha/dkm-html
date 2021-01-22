@@ -1,0 +1,14 @@
+.why-work-section{
+	@media screen and (min-width: 992px){
+		.section-caption{
+			max-width: 1160px;
+			margin-left: auto;
+			margin-right: auto;
+
+			.sc-title{
+				font-size: 36px;
+				line-height: 1.3;
+			}
+		}
+	}
+}

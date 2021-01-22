@@ -1,0 +1,42 @@
+.innovations-section{
+	padding: 70px 0;
+
+	.section-inner{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+		align-items: center;
+	}
+
+	.section-image{
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.section-caption{
+		max-width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+	.section-button{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 55px;
+	}
+
+	@media screen and (max-width: 767px){
+		.section-inner{
+			grid-template-columns: 1fr;
+
+			.section-image{
+				order: 2;
+			}
+		}
+	}
+}

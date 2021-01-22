@@ -1,0 +1,107 @@
+.documentation-section{
+	.page-caption{
+		margin-bottom: 50px;
+	}
+}
+
+.documentation-tab{
+	.tab-caption{
+		font-size: 30px;
+		line-height: 1.2;
+		padding-bottom: 15px;
+		border-bottom: 1px solid rgba($dark, .1);
+		margin-bottom: 15px;
+		color: $text-dark;
+	}
+
+	.tab-text{
+		margin-bottom: 40px;
+		@include tpg-default;
+	}
+}
+
+.tabs-nav{
+	margin-bottom: 60px;
+	display: flex;
+	border-bottom: 2px solid $primary;
+
+	li{
+		margin-right: 10px;
+		flex: auto;
+		display: flex;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		.tab-btn{
+			background: rgba($dark, .1);
+			transition: all $t;
+			padding: 13px 33px;
+			width: 100%;
+			font-size: 15px;
+			line-height: 1.2;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: bold;
+
+			&:hover,
+			&:focus{
+				background: rgba($dark, .4);
+				color: #fff;
+				outline: none;
+			}
+
+			&.current{
+				background: $primary;
+				color: #fff;
+			}
+
+			@media screen and (max-width: 991px){
+				font-size: 13px;
+				padding: 13px;
+			}
+		}
+	}
+}
+
+.tabs-select-wrapper{
+	margin-bottom: 35px;
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		width: 12px;
+		height: 2px;
+		background: $primary;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 25px;
+		border-radius: 2px;
+	}
+
+	select{
+		height: 52px;
+		background: #D5D8DD;
+		padding: 0 50px 0 10px;
+		font-size: 15px;
+		font-weight: bold;
+		font-family: inherit;
+		color: $text-dark;
+		width: 100%;
+		border: 0;
+		border-bottom: 2px solid $primary;
+		appearance: none;
+		box-shadow: none;
+	}
+}
+
+@media screen and (max-width: 1319px){
+	.documentation-table{
+		min-width: 1100px;
+	}
+}

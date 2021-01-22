@@ -1,0 +1,111 @@
+.pagination-wrapper{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 40px;
+
+	@media screen and (max-width: 575px){
+		justify-content: space-between;
+	}
+
+	.pagination{
+		display: flex;
+		justify-content: center;
+
+		li{
+			margin-right: 12px;
+			color: $text-dark;
+
+			@media screen and (max-width: 575px){
+				margin-right: 6px;
+			}
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+			a{
+				font-size: 14px;
+				line-height: 1;
+				font-weight: bold;
+				text-align: center;
+				color: inherit;
+				transition: all $t;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 42px;
+				height: 42px;
+				border: 1px solid rgba($dark, .1);
+
+				&:hover,
+				&:focus{
+					border-color: $primary;
+				}
+
+				@media screen and (max-width: 575px){
+					width: 36px;
+					height: 36px;
+				}
+			}
+
+			&.current{
+				a{
+					cursor: default;
+					pointer-events: none;
+					color: $primary;
+					border-color: $primary;
+				}
+			}
+		}
+	}
+
+	.prevnext{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 42px;
+		height: 42px;
+		border: 1px solid rgba($dark, .1);
+
+		@media screen and (max-width: 575px){
+			width: 36px;
+			height: 36px;
+		}
+
+		svg{
+			width: 8px;
+			height: 12px;
+			display: block;
+			fill: #0067AA;
+			transition: all $t;
+		}
+
+		&:hover{
+			border-color: $primary;
+			background: $primary;
+
+			svg{
+				fill: #fff;
+			}
+		}
+
+		&.prev{
+			margin-right: 12px;
+		}
+
+		&.next{
+			margin-left: 12px;
+		}
+
+		@media screen and (max-width: 575px){
+			&.prev{
+				margin-right: 6px;
+			}
+
+			&.next{
+				margin-left: 6px;
+			}
+		}
+	}
+}

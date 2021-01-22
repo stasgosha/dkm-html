@@ -1,0 +1,38 @@
+.first-screen-section{
+	height: 960px;
+	display: flex;
+	align-items: flex-end;
+	padding: 210px 0;
+	background-size: cover;
+	background-position: center center;
+	min-height: 45vw;
+
+	.first-screen-caption{
+		color: #fff;
+		text-align: center;
+		font-size: 40px;
+		line-height: 1.45;
+		font-weight: 400;
+		max-width: 1070px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.small{
+		height: auto;
+		padding: 250px 0 170px;
+		background-position: center top;
+	}
+
+	@media screen and (max-width: 1319px){
+		height: 650px;
+	}
+
+	@media screen and (max-width: 767px){
+		padding: 260px 0 100px !important;
+
+		.first-screen-caption{
+			font-size: 30px;
+		}
+	}
+}

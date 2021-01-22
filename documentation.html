@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Наша документация | DKM</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/slick-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper" id="top">
+		<header class="header">
+			<div class="container">
+				<div class="header-inner">
+					<div class="header-block">
+						<a href="index.html" class="logo-block">
+							<img src="img/logo.svg" alt="Дорогобуш Котломаш. Группа компаний «ЕКС»">
+						</a>
+					</div>
+					<div class="header-block flex header-nav-and-search">
+						<nav class="top-nav lg-hidden">
+							<ul>
+								<li class="menu-item-has-children">
+									<a href="about.html">О заводе</a>
+									<ul class="sub-menu">
+										<li><a href="history.html">Наша история</a></li>
+										<li><a href="team.html">Наша Команда</a></li>
+										<li><a href="news.html">Новости</a></li>
+									</ul>
+								</li>
+								<li><a href="production.html">Продукция</a></li>
+								<li class="menu-item-has-children">
+									<a href="for-developers.html">Проектировщикам</a>
+									<ul class="sub-menu">
+										<li><a href="documentation.html">Документация</a></li>
+									</ul>
+								</li>
+								<li><a href="projects.html">Наши проекты</a></li>
+								<li><a href="services.html">Сервис</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+
+						<div class="header-search">
+							<button class="search-trigger">
+								<svg class="btn-icon">
+									<use xlink:href="img/icons-sprite.svg#search" class="search"></use>
+									<use xlink:href="img/icons-sprite.svg#close" class="close"></use>
+								</svg>
+							</button>
+							<form action="" class="search-form">
+								<input type="text" class="search-field" placeholder="Поиск...">
+								<button class="search-btn">
+									<svg class="btn-icon">
+										<use xlink:href="img/icons-sprite.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="header-block header-contacts sm-hidden">
+						<a href="tel:+74951290120" class="phone-link">+7 495-129-01-20</a>
+						<button class="btn btn-light btn-white btn-small">Заказать звонок</button>
+					</div>
+					<div class="header-block lg-visible">
+						<button class="menu-opener" aria-label="Показать меню">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<nav class="mobile-top-nav">
+				<ul>
+					<li class="menu-item-has-children">
+						<a href="about.html">О заводе</a>
+						<ul class="sub-menu">
+							<li><a href="history.html">Наша история</a></li>
+							<li><a href="team.html">Наша Команда</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
+					</li>
+					<li><a href="production.html">Продукция</a></li>
+					<li class="menu-item-has-children">
+						<a href="for-developers.html">Проектировщикам</a>
+						<ul class="sub-menu">
+							<li><a href="documentation.html">Документация</a></li>
+						</ul>
+					</li>
+					<li><a href="projects.html">Наши проекты</a></li>
+					<li><a href="services.html">Сервис</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+
+				<div class="mobile-contacts sm-visible">
+					<a href="tel:+74951290120" class="phone-link">+7 495-129-01-20</a>
+					<button class="btn btn-light btn-white btn-small">Заказать звонок</button>
+				</div>
+			</nav>
+		</header>
+		<main class="page-content">
+			<section class="breadcrumbs-section">
+				<div class="container">
+					<ol class="breadcrumbs">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="for-developers.html">Проектировщикам</a></li>
+						<li><a href="documentation.html">Наша документация</a></li>
+					</ol>
+				</div>
+			</section>
+
+			<section class="documentation-section default-inner-page">
+				<div class="container">
+					<h1 class="page-caption">Наша документация</h1>
+
+					<ul class="tabs-nav sm-hidden">
+						<li><button data-tab="#tab-1" class="tab-btn">Документация <br>на котлы</button></li>
+						<li><button data-tab="#tab-2" class="tab-btn">Документация <br>на модульные котельные</button></li>
+						<li><button data-tab="#tab-3" class="tab-btn">Разрешения <br>Ростехнадзора</button></li>
+						<li><button data-tab="#tab-4" class="tab-btn">Сертификаты</button></li>
+						<li><button data-tab="#tab-5" class="tab-btn">Выдержки из <br>СНиПов, ГоСТов, РД</button></li>
+					</ul>
+
+					<div class="tabs-select-wrapper sm-visible">
+						<select class="tabs-select">
+							<option value="#tab-1">Документация на котлы</option>
+							<option value="#tab-2">Документация на модульные котельные</option>
+							<option value="#tab-3">Разрешения Ростехнадзора</option>
+							<option value="#tab-4">Сертификаты</option>
+							<option value="#tab-5">Выдержки из СНиПов, ГоСТов, РД</option>
+						</select>
+					</div>
+
+					<div class="tabs-container">
+						<div class="tab" id="tab-1">
+							<div class="documentation-tab">
+								<h2 class="tab-caption">Документация на котлы</h2>
+
+								<div class="tab-text">
+									<p>Технические характеристики водогрейных котлов производства АО "Дорогобужкотломаш" мощностью от 0,05 до 7,56 МВт.</p>
+								</div>
+
+								<div class="table-wrapper">
+									<table class="table with-lines small-paddings documentation-table">
+										<thead>
+											<tr>
+												<th>№</th>
+												<th>Тип котла</th>
+												<th>Вид, габариты</th>
+												<th>Техническое описание, характеристики, комплектация вспомогательным оборудованием</th>
+												<th>Схема циркуляции</th>
+												<th>Нагрузки на фундамент</th>
+												<th>Таблицы расчетов</th>
+												<th>Инструкция по обмуровочным работам</th>
+												<th>Руководство по монтажу и эксплуатации</th>
+												<th>Спецификация обмуровочных материалов</th>
+												<th>Скачать все</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">1</td>
+												<td class="text-left type">КВ-Г-0,63; 1,1; 2,0 <br>(VT-630, VT-1100, VT-2000)</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-center">2</td>
+												<td class="text-left type">КВ-Г-0,63; 1,1; 2,0 <br>(VT-630, VT-1100, VT-2000)</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-center">3</td>
+												<td class="text-left type">КВ-Г-0,63; 1,1; 2,0 <br>(VT-630, VT-1100, VT-2000)</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-center">4</td>
+												<td class="text-left type">КВ-Г-0,63; 1,1; 2,0 <br>(VT-630, VT-1100, VT-2000)</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													<a href="#" download target="_blank" class="small-download-link" aria-label="Скачать">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#download"></use>
+														</svg>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="tab" id="tab-2">
+							<div class="documentation-tab">
+								<h2 class="tab-caption">Tab 2</h2>
+							</div>
+						</div>
+						<div class="tab" id="tab-3">
+							<div class="documentation-tab">
+								<h2 class="tab-caption">Tab 3</h2>
+							</div>
+						</div>
+						<div class="tab" id="tab-4">
+							<div class="documentation-tab">
+								<h2 class="tab-caption">Tab 4</h2>
+							</div>
+						</div>
+						<div class="tab" id="tab-5">
+							<div class="documentation-tab">
+								<h2 class="tab-caption">Tab 5</h2>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="socials-block">
+						<h3 class="block-caption">Присоединяйтесь к нам <br>в социальных сетях</h3>
+						<ul class="socials-list">
+							<li>
+								<a href="#" target="_blank" rel="noopener nofollow" aria-label="instagram">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener nofollow" aria-label="vk">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener nofollow" aria-label="facebook">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" rel="noopener nofollow" aria-label="youtube">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#youtube"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block footer-logo-and-descr">
+							<a href="index.html" class="footer-logo">
+								<img src="img/logo-white.svg" alt="Дорогобуш Котломаш">
+							</a>
+							<div class="logo-descr">
+								<p>Крупнейший производитель водогрейных котлов и запасных частей, лидер в области комплексных решений для теплоснабжения, энерго- и ресурсосбережения России</p>
+							</div>
+						</div>
+
+						<div class="footer-block">
+							<nav class="footer-nav">
+								<ul>
+									<li>
+										<a href="about.html">О заводе</a>
+										<ul class="sub-menu">
+											<li><a href="history.html">Наша история</a></li>
+											<li><a href="team.html">Наша Команда</a></li>
+											<li><a href="news.html">Новости</a></li>
+										</ul>
+									</li>
+									<li><a href="production.html">Продукция</a></li>
+									<li>
+										<a href="for-developers.html">Проектировщикам</a>
+										<ul class="sub-menu">
+											<li><a href="documentation.html">Документация</a></li>
+										</ul>
+									</li>
+									<li><a href="projects.html">Наши проекты</a></li>
+									<li><a href="services.html">Сервис</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="footer-block">
+							<div class="footer-contacts-block">
+								<a href="tel:+74951290120" class="phone-link">+7 495-129-01-20</a>
+								<a href="mailto:info@dkm.ru" class="email-link">info@dkm.ru</a>
+
+								<ul class="small-socials-list">
+									<li>
+										<a href="#">
+											<svg class="link-icon">
+												<use xlink:href="img/icons-sprite.svg#whatsapp"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg class="link-icon">
+												<use xlink:href="img/icons-sprite.svg#telegram"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row third">
+				<div class="container">
+					<div class="footer-inner">
+						<p class="copyright">© ООО «Торговый дом Дорогобужкотломаш» 215750, Смоленская обл., Дорогобужский р-н, пос. Верхнеднепровский</p>
+
+						<a href="https://webolution.ru" target="_blank" class="webolution">
+							<img src="img/webolution.png" alt="Webolution">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- <div class="modal" id="callback-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+
+				<h3 class="modal-caption">Заказать звонок</h3>
+
+				<div class="form order-form">
+					<form action="#">
+						<div class="form-row">
+							<div class="form-field">
+								<input type="text" class="input-field" placeholder="Имя">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<input type="tel" class="input-field" placeholder="Телефон">
+							</div>
+						</div>
+						<div class="form-row">
+							<label class="checkbox on-light-bg">
+								<input type="checkbox" class="visually-hidden">
+								<span class="fake-label">Выражаю свое согласие на обработку персональных данных в соответсивии с Политикой конфиденциальности</span>
+							</label>
+						</div>
+						<div class="form-row last">
+							<button class="btn">
+								<span class="btn-inner">
+									<span class="btn-text">Отправить</span>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть попап"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="//www.youtube.com/iframe_api"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

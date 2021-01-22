@@ -1,0 +1,25 @@
+// Fonts
+$main-font: 'Magistral', Arial, sans-serif;
+$second-font: 'Arial', sans-serif;
+
+// Colors
+$orange: #E52713;
+$blue: #0067AA;
+
+$gray: #394A58;
+$dark: #243340;
+$light: #394A58;
+
+$text-color: $gray;
+$text-dark: $dark;
+$text-light: $light;
+
+$primary: $orange;
+$accent: $blue;
+
+// Params
+$body-bg: #E8EAEE; // site background
+$t: .3s; // animation duration
+$r: 0; // default border radius
+$shadow: 0px 4px 35px rgba(#000, 0.09); // default card shadow
+$gradient: linear-gradient(to bottom, #deb986, #d9aa6d 100%)

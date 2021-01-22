@@ -1,0 +1,128 @@
+.compare-section{
+	display: grid;
+	grid-gap: 6px;
+	grid-template-columns: 1fr 1fr;
+	min-height: 500px;
+	color: #fff;
+	position: relative;
+
+	.section-block{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		&.red{
+			background: $primary;
+		}
+
+		&.blue{
+			background: $accent;
+		}
+
+		&:first-child{
+			text-align: right;
+			padding: 75px 200px 90px 120px;
+			align-items: flex-end;
+		}
+
+		&:last-child{
+			padding: 75px 120px 90px 200px;
+			align-items: flex-start;
+			text-align: left;
+
+			.section-caption{
+				.sc-title{
+					text-align: left;
+				}
+			}
+		}
+
+		.block-text{
+			max-width: 630px;
+			@include tpg-default;
+		}
+	}
+
+	.section-caption{
+		margin-bottom: 40px;
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		width: 260px;
+		height: 260px;
+		background: url(../img/decorations/quality-section-decoration.svg) no-repeat center center / 100% 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media screen and (max-width: 1499px){
+		&:after{
+			width: 180px;
+			height: 180px;
+		}
+
+		.section-block{
+			&:first-child{
+				padding-right: 100px;
+				padding-left: 30px;
+			}
+
+
+			&:last-child{
+				padding-left: 100px;
+				padding-right: 30px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1319px){
+		grid-template-columns: 1fr;
+
+		&:after{
+			display: none;
+		}
+
+		.section-block{
+			align-items: flex-start !important;
+			min-height: unset;
+
+			&:first-child{
+				padding: 70px 15px 110px;
+				text-align: left !important;
+				position: relative;
+
+				&:after{
+					content: '';
+					display: block;
+					width: 120px;
+					height: 120px;
+					background: url(../img/decorations/quality-section-decoration.svg) no-repeat center center / 100% 100%;
+					position: absolute;
+					left: 50%;
+					top: 100%;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+			&:last-child{
+				padding: 110px 15px 70px;
+			}
+
+			.block-text{
+				max-width: unset;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.section-caption{
+			.sc-title.small{
+				font-size: 26px;
+			}
+		}
+	}
+}

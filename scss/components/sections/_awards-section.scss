@@ -1,0 +1,59 @@
+.awards-section{
+	padding: 55px 0 100px;
+
+	.section-caption{
+		margin-bottom: 50px;
+	}
+
+	.section-text{
+		margin-bottom: 45px;
+		@include tpg-default;
+	}
+}
+
+.awards-slider-wrapper{
+	margin-top: 50px;
+	margin-bottom: 70px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.slider-nav{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+
+		.slick-arrow{
+			position: static;
+			transform: translateY(0);
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.awards-slider{
+			width: calc(100% + 220px);
+			margin-right: -220px;
+		}
+	}
+}
+
+.award-card{
+	.card-image{
+		margin-bottom: 20px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.card-caption{
+		font-size: 14px;
+		line-height: 1.25;
+		color: $text-dark;
+		font-weight: bold;
+		text-align: center;
+	}
+}

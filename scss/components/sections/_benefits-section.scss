@@ -1,0 +1,183 @@
+.benefits-section{
+	background: $dark;
+	padding: 80px 0 130px;
+	position: relative;
+
+	&.second{
+		padding: 170px 0 60px;
+		background: $accent;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 238px;
+			height: 238px;
+			background: url(../img/decorations/quality-section-decoration.svg) no-repeat center center / cover;
+			position: absolute;
+			left: 50%;
+			top: -120px;
+			transform: translateX(-50%);
+
+			@media screen and (max-width: 767px){
+				width: 120px;
+				height: 120px;
+				top: -60px;
+			}
+		}
+	}
+
+	.section-caption{
+		margin-bottom: 55px;
+	}
+
+	.section-inner{
+		display: grid;
+		grid-template-columns: 1fr 440px;
+		grid-gap: 30px;
+		justify-content: space-between;
+	}
+
+	.section-content{
+		max-width: 775px;
+		color: #fff;
+	}
+
+	.section-text{
+		@include tpg-default;
+	}
+
+	.tick-list{
+		max-width: 625px;
+	}
+
+	@media screen and (max-width: 991px){
+		.section-inner{
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding-bottom: 80px;
+
+		&.second{
+			padding-top: 80px;
+		}
+	}
+}
+
+.tick-list{
+	li{
+		margin-bottom: 24px;
+		position: relative;
+		padding-left: 37px;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			background: url(../img/icons/small-red-tick.svg) no-repeat center center / contain;
+			position: absolute;
+			left: 0;
+			top: 2px;
+		}
+	}
+
+	&.white{
+		li{
+			&:before{
+				background-image: url(../img/icons/small-white-tick.svg);
+			}
+		}
+	}
+}
+
+.manager-card{
+	margin-top: 60px;
+	padding: 60px 50px 30px 70px;
+	background: $accent;
+	color: #fff;
+	position: relative;
+
+	.second &{
+		background: rgba($dark, .5);
+	}
+
+	.card-photo{
+		width: 100px;
+		height: 100px;
+		display: block;
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: center center;
+		position: absolute;
+		top: -60px;
+		left: 55px;
+	}
+
+	.card-caption{
+		font-weight: 500;
+		padding-bottom: 20px;
+		border-bottom: 1px dashed rgba(#fff, .4);
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 1;
+		font-weight: 500;
+
+		@media screen and (max-width: 575px){
+			font-size: 16px;
+		}
+	}
+
+	.card-contacts{
+		padding-bottom: 25px;
+		border-bottom: 1px dashed rgba(#fff, .4);
+		margin-bottom: 25px;
+
+		li{
+			margin-bottom: 13px;
+			font-size: 16px;
+			line-height: 1.1;
+			font-weight: 500;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			a{
+				color: inherit;
+				font-weight: bold;
+
+				&:hover,
+				&:focus{
+					color: $primary;
+				}
+			}
+
+			@media screen and (max-width: 575px){
+				font-size: 14px;
+			}
+		}
+	}
+
+	.card-btn{
+		padding: 20px 37px;
+		min-height: 62px;
+		background: #fff;
+		color: $primary;
+		padding: 15px 35px;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		&:hover,
+		&:focus{
+			background: $primary;
+			color: #fff;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		padding: 60px 20px 40px;
+	}
+}

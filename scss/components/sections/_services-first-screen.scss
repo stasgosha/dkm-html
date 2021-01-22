@@ -1,0 +1,19 @@
+.services-first-screen{
+	min-height: 540px;
+	display: flex;
+	align-items: center;
+	padding: 240px 0 180px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.section-caption{
+		.sc-title{
+			line-height: 1.5;
+
+			small{
+				font-size: inherit;
+			}
+		}
+	}
+}

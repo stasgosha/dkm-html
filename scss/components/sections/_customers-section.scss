@@ -65,4 +65,25 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 439px){
+		.block-list{
+			width: calc(100% + 15px * 2);
+			margin-left: -15px;
+			margin-right: -15px;
+
+			.item{
+				width: 110px;
+
+				&:first-child{
+					margin-left: 15px;
+				}
+
+				&:last-child{
+					padding-right: 15px;
+					width: 125px;
+				}
+			}
+		}
+	}
 }

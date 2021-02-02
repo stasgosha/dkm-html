@@ -39,7 +39,7 @@
 		background: url(../img/backgrounds/header-bg.jpg) no-repeat center center / auto 158px;
 
 		@media screen and (max-width: 767px){
-			background-size: cover;
+			background-size: auto 182px;
 		}
 	}
 
@@ -99,7 +99,7 @@
 	visibility: hidden;
 	opacity: 0;
 	transform: translateY(-100%);
-	transition: all $t;
+	transition: all .6s;
 	max-height: calc(100vh - 182px);
 	overflow-y: auto;
 	overscroll-behavior-y: contain;

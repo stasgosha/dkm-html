@@ -267,13 +267,13 @@ document.addEventListener('DOMContentLoaded', function(){
 				header.classList.add('sticky');
 
 				if ($(window).width() < 768) {
-					$('.header-nav-and-search').stop().slideUp(300);
+					$('.header-nav-and-search').stop().hide(0);
 				}
 			} else{
 				header.classList.remove('sticky');
 
 				if ($(window).width() < 768) {
-					$('.header-nav-and-search').stop().slideDown(300);
+					$('.header-nav-and-search').stop().show(0);
 				}
 			}
 		};

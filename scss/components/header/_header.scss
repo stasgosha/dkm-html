@@ -223,6 +223,10 @@
 				height: 53px;
 			}
 		}
+
+		@media screen and (max-width: 1319px) and (min-width: 1200px){
+			height: 53px !important;
+		}
 	}
 }
 

@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	// Accordions
 	$('.accordion, .js-accordion').each(function(i, el){
+		let firstClick = false;
 		$(el).find('> .ac-header, > .ac-header > .ac-opener').click(function(e){
 			e.preventDefault();
 			e.stopPropagation();
@@ -46,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function(){
 			$(this).closest('.accordion, .js-accordion').find('> .ac-content').stop().slideToggle(300);
 			$(this).closest('.accordion, .js-accordion').find('.slick-slider').slick('setPosition');
 			$(this).closest('.accordion, .js-accordion').toggleClass('opened');
+
+			if ($(this).closest('.single-product-page').length != 0) {
+				$(this).closest('.accordion').siblings()
+					.removeClass('opened')
+					.find('> .ac-content').stop().slideUp(300);
+			}
 		});
 
 		if ($(el).hasClass('opened-on-load')) {

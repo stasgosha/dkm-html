@@ -40,6 +40,16 @@
 		}
 	}
 
+	&.single-product-page{
+		.section-inner{
+			grid-gap: 60px 30px;
+		}
+
+		.section-content{
+			grid-column: 1 / -1;
+		}
+	}
+
 	@media screen and (max-width: 767px){
 		.section-inner{
 			grid-template-columns: 100%;
